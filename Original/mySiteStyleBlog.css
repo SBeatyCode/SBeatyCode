@@ -1,0 +1,167 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background: linear-gradient(to bottom, lightgrey, teal);
+	background: -webkit-linear-gradient(to bottom, lightgrey, teal);
+	background-size: auto 100%;
+	background-repeat: none;
+	background-attachment: fixed;
+}
+
+/*display for cell phones*/
+@media only screen and (max-width: 770px) {
+	[class*="col-"] {
+		width: 100%;
+		justify-content: center;
+	}
+	
+	#main {
+		text-align: center;
+	}
+	
+	#footer {
+		text-align: center;
+	}
+}
+
+.hide {
+	display: none; /* keep an eye out to make sure this property doesn't cause a problem*/
+	overflow: hidden; 
+	height: 0px; 
+	width: 0px; 
+	margin: -1px; 
+	padding: 0; 
+	border: 0; 
+}
+
+#menu {
+	background-color: black;
+	color: white;
+	position: relative;
+	padding: 10px;
+	font-family: Verdana, sans-serif;
+	font-size: 14px;
+}
+
+.menu_item {
+	display: inline-block;
+	list-style: none;
+	padding: 10px;
+	/* this needed for the mobile menu*/
+	text-decoration: none;
+	color: white;
+}
+
+.menu_item a {
+	text-decoration: none;
+	color: white;
+}
+
+.menu_item:hover {
+	background-color: grey;
+}
+
+#dropdownMenu {
+	width: 30px;
+	/* trying stuff*/
+	position: absolute;
+	min-width: 150px;
+	background: black;
+}
+
+#dropdownMenu li { /* may be able to get rid of this if other thing works*/
+	display: list-item;
+}
+
+.material-icons {
+	vertical-align: -20%;
+	margin-right: 4px;
+}
+
+#header {
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	background-color: rgba(255, 255, 255, .5);
+}
+
+#wrapper {
+	max-width: 80%;
+	font-family: Verdana, sans-serif;
+	font-size: 14px;
+	text-indent: 25px;
+	display: -webkit-flex; /* this is depreciated but kept for compatibility*/
+	display: flex;
+}
+
+#flexBox {
+	display: -webkit-flex;
+	display: flex;
+	flex-direction: row;
+}
+
+#sidebar {
+	background-color: rgba(255, 255, 255, .3);
+	margin-right: 30px;
+	flex: 1;
+	position: relative;
+}
+
+#sidebar h4 {
+	text-indent: 10px;
+}
+
+#sidebar p {
+	margin-left: 5px;
+	margin-right: 5px;
+}
+
+#main {
+	font: Tahoma;
+	font-size: 14;
+	padding-bottom: 30px;
+	flex: 3;
+	background-color: rgba(255, 255, 255, .3);
+}
+
+.articleBody {
+	margin: 10px;
+}
+
+#article2 {
+	margin-top: 20px;
+	border-top: solid lightgrey 1px;
+}
+
+#article3 {
+	margin-top: 20px;
+	border-top: solid lightgrey 1px;
+}
+
+#archive {
+	background-color: black;
+	color: white;
+	flex: 1;
+}
+
+
+#footer{
+	background-color: black;
+	color: white;
+	/*height: 30px;*/
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	height:30px;
+	width:100%;
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+}

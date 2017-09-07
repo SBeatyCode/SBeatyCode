@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="A resume, portfolio website where I can show off things that I've
+		learned. I hope to expand the site to continually show what I'm learning and doing.">
+	<meta name="keywords" content="Stephen Beaty Sbeatycode Sbeaty Code resume portfolio computer tech programming Web Development HTML CSS Javascript JQuery Java C# .NET Unity">
+	<meta name="author" content="Stephen Beaty">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>4/19/17 - 0003</title>
+	<link rel="stylesheet" href="mySiteStyle.css"/>
+	<link rel="stylesheet" href="blogStyle.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+	<div id="mmBar">
+		<div id="mobileMenu" class="hide">
+			<a id="dropButton" class="menu_item" href="#"><i class="material-icons">menu</i>Menu</a>
+			<div id="dropdownMenu" class ="hide">
+				<a class="menu_item" href="homepage_og.html"><i class="material-icons">home</i>Home</a>
+				<a class="menu_item" href="portfolio_og.html">Portfolio</a></br>
+				<a class="menu_item" href="about_og.html">About Me</a>
+				<a class="menu_item" href="contact_og.html">Contact</a>								
+				<a class="menu_item" href="blog_og.html">Blog</a>				
+				<a class="menu_item" href="blogUpdates_og.html">-Updates</a>
+				<a class="menu_item" href="blogAbout_og.html">-About</a>
+				<a class="menu_item" href="blogArticles_og.html">-Articles</a>				
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="menu">
+		<ul>
+			<li class="menu_item"><i class="material-icons">home</i><a href="homepage_og.html">Home</a></li>
+			<li class="menu_item"><a href="portfolio_og.html">Portfolio</a></li>
+			<li class="menu_item"><a href="about_og.html">About Me</a></li>			
+			<div id="mobileMenuBlog" class="dropdown">
+				<li class="menu_item"><a href="blog_og.html">Blog</a></li>
+				<div id="dropdownMenuBlog" class ="dropdownContent">
+					<li class="blog_menu_item"><a href="blogUpdates_og.html">Updates</a></li>
+					<li class="blog_menu_item"><a href="blogAbout_og.html">About</a></li>
+					<li class="blog_menu_item"><a href="blogArticles_og.html">Articles</a></li>
+				</div>
+			</div>
+			<li class="menu_item"><a href="contact_og.html">Contact</a></li>
+		</ul>
+	</div>
+	
+	<header id="header" class="blogHeader"><h1>CSS, and Responsiveness. The @media tag is my friend.</h1></header></br>
+	
+	<div id="wrapper">		
+			<div id="placeholder" class="col-2"></div>
+			
+			<div id="main" class="col-10">
+				<img id="blogPic4" class="blogPic col-3" src="images/cssLogo.jpg">
+
+				<p class="articleDate col-7">- Stephen Beaty – 4/19/17</p>
+				<div class="articleBody col-10">
+					<p>
+						While I was creating this site, I probably spent just as much time with, if not more, styling the CSS pages than the HTML.
+						In Web Design, HTML serves as the ‘backbone’ of the webpage. It makes up the basic structure, and often contains the page’s content.
+						CSS is integrally tied to HTML, and gives the webpage it’s design, style, flow, and with CSS3 even some functionality. Realistically speaking,
+						you can’t have one without the other.
+					</p>
+					<p>
+						In building the site, I came upon several issues with the CSS. Finding a good overall layout, finding a ‘look’ for the site I liked, making the 
+						site responsive (or in other words, making it so the page looks good on different devices – including mobile), were all things that came up. Then 
+						of course, there’s making sure everything has a consistent, overall look across the website, while also making each page look ‘right’, so that the page’s
+						appearance matched its function.
+					</p>
+					<p>
+						One very important factor for any website built now is responsiveness. This is achieved primarily through the use of CSS and JavaScript. While I was researching
+						the best way to make my site responsive, there are 2 important things I came across. The first was using a CSS styling method that would inherently make a page
+						responsive and the second is the @media tag. 
+					</p>
+					<p>
+						I used the Grid-View method which you can read more about int he Grid View post. Without repeating myself too much, this is basically a way of styling a page by
+						assigning elements a value of 1-12, with each row on a webpage having a total value of 12. What’s nice about this is that each numerical value is given a percent-value
+						of how much space it takes up. So, when elements are placed inside of it and the page is resized, the elements within each of these numerical values are automatically 
+						scaled up and down with the page as it is resized.
+					</p>
+					<p>
+						One small thing I had to do to make sure this worked properly was to make sure the images were scaling with the page as well. Initially, once the page got to a small size,
+						the images would extend out past where I wanted them to be. This is simply fixed though. By setting the max-width property (generally at 100%), setting the height to ‘auto’,
+						and optionally setting a min-width, this helps the images to scale along with the rest of the elements.
+					</p>
+					<p>
+						Of course, all of this still gives the issue of making sure the site still looks good on mobile devices. Leaving it as it was, all the elements on the page just got too crowded and
+						squished once the screen got too small. At first, I thought I was going to have to write out a script using JavaScript to resize and reorganize everything. 
+					</p>
+					<p>
+						Then I found out about the @media CSS tag. This allows you to give the same elements different property values. By using ‘@media only screen and (max-width: = aValue) {property: value;}’,
+						you’re able to change the properties of elements for whenever the screen the page is viewed on is less than the max value (represented above by aValue). When the site is viewed on a mobile 
+						device, or the browser window on a PC is resized to be small enough, these properties kick in. 
+					</p>
+					<p>
+					</p>
+					<p>
+						By setting each Grid-View value to be the width of the whole page (or in other words setting each numerical value to have a width of 100%), each item takes up its own row. This gives the page
+						a much cleaner look for smaller screens. By using some JavaScript, I was also able to reorganize and ‘hide’ different elements as well. Another thing I had to give attention to was changing the
+						way the menu bars looked and behaved, so that they still looked ok. However, since I actually have one more change I still want to make to the menu bars, I’ll talk about these in more depth
+						in an upcoming post.
+					</p>
+				</div>
+			</div>
+	</div>
+	
+	<footer id="footer">Copyright sbeatycode 2017  - <a href="homepage.html">Back To Main Page</a></footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="mySiteFunc.js"></script>
+</body>
+</html>

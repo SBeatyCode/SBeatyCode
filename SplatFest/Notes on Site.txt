@@ -1,0 +1,15 @@
+Have a container with the navbar static on top - MAYBE add a fith button that's just the logo
+
+Start with the cover art as a parallax scrolling image (possibly procede this with the 2 color squids 
+if you need the space so it'll scroll right) then go into the squids BG. 
+
+Have the Inklings fadein and fly into place w/ JS.
+
+Have each of the buttons be a quick link to parts of the webpage (top, bottom, ect)
+Make the buttons ANIMATED! Have them bounce, slant, ect
+
+Maybe have the other Inklings fly in at another point, see how it looks.
+
+Maybe have another parallax effect at the bottom with the game cover-art again, with a footer with
+copyright info.
+

@@ -1,0 +1,198 @@
+<!DOCTYOE html>
+<html>
+    <head>
+        <title>Splatfest! Splattoon Fansite</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="description" content="This is a Splatoon fansite using Javascript and CSS animation, in an attempt to make a site similar to Nintendo with animated and interactive elements on the page">
+        <meta name="author" content="Stephen Beaty, SBeaty Code">
+        <meta name="keywords" content="Splatoon Splatfest Javascript Sbeatycode coding pracice animation interactive Nintendo Inklings">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css?family=Baloo+Bhaijaan" rel="stylesheet">
+        
+        <!-- Stylesheet -->
+        <link href="css/splatStyle.css" rel="stylesheet">
+       
+        <!-- 
+        *****NOTE*****
+        
+          Splatoon, Nintendo, Inklings, and all related terms and images belong to Nintendo. This is simply a fansite I made to practice coding webpages using Javascript and CSS animations
+          
+        -->
+    </head>
+    
+    <body>
+       <!-- Bootstrap Navbar - Collapses For Mobile -->
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+          <div class="container-fluid">
+            <!-- mobile display -->
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="navbar-collapse">
+              <ul class="nav navbar-nav">
+                   <li><a class="menu-item" href="#top"><button type="button" class="btn btn-default navbar-btn splat-btn btn1">Top</button></a></li>
+                   <li><a class="menu-item" href="#info"><button type="button" class="btn btn-default navbar-btn splat-btn btn2">Info</button></a></li>
+                   <li><div><a href="#"><img class="logo" src="Images/Splatlogo1.jpg"></a></div></li>
+                   <li class="dropdown"><a class="menu-item dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><button type="button" class="btn btn-default navbar-btn splat-btn btn3">Links</button></a><!--</li>-->
+                       <ul class="dropdown-menu">
+                          <div class="menu-container">
+                              <li><a href="http://sbeatycode.com/portfolio.html">SBeaty Code</a></li>
+                              <hr>
+                               <li><a href="https://www.nintendo.com">Official Nintendo Site</a></li>
+                               <hr>
+                              <li><a href="http://splatoon.nintendo.com">Official Splatoon 2 Site</a></li>
+                          </div>
+                       </ul>
+                  </li>
+                   <li><a class="menu-item " href="#bottom"><button type="button" class="btn btn-default navbar-btn splat-btn btn4">Bottom</button></a></li>
+              </ul>
+            </div><!-- /.navbar-collapse -->
+          </div><!-- /.container-fluid -->
+        </nav>
+        <!-- /navbar -->
+        
+        <div class="container-fluid wrapper">
+            <div class="placeholder" id="top"></div>
+            
+            <header class="row">
+                <div class="col-md-12" id="welcome">
+                    Welcome to <span class="splatfest">Splatfest</span>, a Splatoon fansite!
+                </div>
+            </header>
+            
+    <!-- Parallax image of official Splatoon 2 artwork -->    
+            <div class="container-fluid">
+                <div class="parallax"></div>
+            </div>
+            <br>
+            
+            <div id="box-container">
+               <div class="container-fluid">
+                    <div class="row">
+                       <div class="col-md-5 col-md-offset-1 left-box text-container">
+                          <h3>You’re a Squid! You’re a Kid!</h3>
+                           <p>
+                               Inklings are kids that can turn into squids! In Splatoon, you play as your own customized Inkling. Players can be a boy or girl, pick their eye color and skin tone, all of which can be changed later. As you progress, you level up and are able to purchase more clothing and weapon types using in-game currency to further customize your Inkling to your liking. Splatoon is also compatible with certain Amiibo, which unlock special Amiibo-exclusive items.
+                           </p>
+                       </div>
+                    </div>
+               </div> <!-- /text box -->
+                <br>
+                
+                <div class="container-fluid">
+                    <div class="row">
+                       <div class="col-md-5 col-md-offset-6 right-box text-container">
+                          <h3>Online Action!</h3>
+                           <p>
+                               Play online in several multiplayer modes! The main mode, Turf War, is a 4 vs 4 competition to see who can cover the most ground with their team’s color ink in 3 minutes! There are also competitive modes that shake things up, including Rainmaker, a take on Capture the Flag but with a powerful Weapon. Splat Zones is like a King of The Hill mode trying to control specific areas. Tower Control is like a mix between Capture the Flag and King of the Hill. Splatoon 2 also has Salmon Run, which is a horde-mode style game where teams take on waves of AI-controlled enemies.
+                           </p>
+                       </div>
+                    </div>
+                </div><!-- /text box -->
+                <br>
+                
+                <div id="info"></div>
+                
+                <div class="container">
+                    <div class="row">
+                        <div class="container-fluid col-md-5" id="inklingBoy">
+                            <img class="img-fluid" src="Images/Green_Inkling_-_Splatoon_2.png">
+                        </div>
+                    </div> 
+                </div> <!-- /splatBoy container -->
+                <br>
+                
+                <div class="container-fluid" id="boxart-container">
+                    <div class="row">
+                     
+                      <!-- Boxart 1 -->
+                      <div class="col-md-2 boxart col-md-3 col-md-offset-1">
+                          <img src="Images/splatoon-boxart-big.jpg">
+                      </div>
+                      
+                       <div class="col-md-6 middle-box text-container">
+                          <h3>About The Series!</h3>
+                           <p>
+                               The original Splatoon released on the Wii U in May of 2015. Splatoon quickly gained a large cult following, due to it's unique style of gameplay, the developers consistently adding fresh gear and stages, as well as the frequent splatfests. The community was also very artistic, frequently posting drawings in Miiverse, which allowed players to share drawings with each other in-game as a type of social media. The follow up, Splatoon 2, was released for the Nintendo Switch in June of 2017. So far, it's following in the legacy of the first game and reaching an even bigger audience.
+                           </p>
+                       </div>
+                       
+                      <!-- Boxart 2 -->
+                      <div class="col-md-2 boxart">
+                          <img src="Images/NintendoSwitch-Splatoon2-boxart.jpg">
+                      </div>
+                    </div>
+                </div><!-- /text box -->
+                <br>
+                
+                <div class="container">
+                    <div class="row col-md-12 col-md-offset-6">
+                        <div class="container-fluid col-md-5" id="inklingGirl">
+                            <img class="img-fluid" src="Images/splatoon_2_inkling_girl_artwork.png">
+                        </div>
+                    </div> 
+                </div><!-- /splatGirl container -->
+                <br>
+                
+                
+                <div class="container-fluid">
+                    <div class="row">
+                       <div class="col-md-5 col-md-offset-1 left-box text-container">
+                          <h3>Stay Fresh!</h3>
+                           <p>
+                               New Gear, types of Weapons, new Stages, and new Clothing choices are being added all the time to keep gameplay feeling fresh and exciting! Adding in new items, stages and so forth ensures there is always more variety. The best part is you don’t have to buy any of it as individual DLC items or as a season pass, you get everything automatically! There are also the Splatfests, which are special timed events where players pick one of 2 teams (like Cats vs Dogs) and battle it out to see which team achieves more wins overall during the event.
+                           </p>
+                       </div>
+                    </div>
+                </div><!-- /text box -->
+                <br>
+
+               <div class="container-fluid">
+                    <div class="row">
+                       <div class="col-md-5 col-md-offset-6 right-box text-container">
+                          <h3>Single Player Adventure!</h3>
+                           <p>
+                               The Splatoon games also features a full single player campaign mode! Players take their Inkling into the Octo Valley, trying to find the missing Zapfish and stop the sinister Octarians! This mode is perfect for newcomers, as it introduces all of the mechanics that players will see and use during the game’s multiplayer. The writing is witty and the levels are interesting, including secret items to find and collect in every stage, so it still gives more experienced players a reason to play as well. Plus, finishing it nets you some special gear to wear in the multiplayer modes, so you can show off your prowess to everyone else. 
+                           </p>
+                       </div>
+                    </div> 
+               </div><!-- /text box -->
+                <br>
+                
+            </div> <!-- /Text box container -->
+            
+        <!-- Parallax image of different official Splatoon 2 artwork -->
+            <div class="container-fluid">
+                <div class="parallaxBottom"></div>
+            </div> <!-- /Parallax -->
+            <br>
+        </div> <!-- /page container -->
+        
+        <footer class="footer" id ="bottom">
+            Nintendo, Splatoon, all images, and all related material are property of <span id="nintendo"><a href="https://www.nintendo.com/">&copy; Nintendo</a></span>. The text of the page was written by me. This webpage is not affiliated with Nintendo, and was made by myself as coding practice. <a href="#">SBeaty Code</a>.
+        </footer>
+        
+        
+        <!------- JQuery -------->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        
+        <!------- Bootstrap -------->
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        
+        <!------- Animation Script -------->
+        <script src="js/animations.js"></script>
+    </body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="A resume, portfolio website where I can show off things that I've
+		learned. I hope to expand the site to continually show what I'm learning and doing.">
+	<meta name="keywords" content="Stephen Beaty Sbeatycode Sbeaty Code resume portfolio computer tech programming Web Development HTML CSS Javascript JQuery Java C# .NET Unity">
+	<meta name="author" content="Stephen Beaty">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>4/7/17 - 0001</title>
+	<link rel="stylesheet" href="mySiteStyle.css"/>
+	<link rel="stylesheet" href="blogStyle.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+	<div id="mmBar">
+		<div id="mobileMenu" class="hide">
+			<a id="dropButton" class="menu_item" href="#"><i class="material-icons">menu</i>Menu</a>
+			<div id="dropdownMenu" class ="hide">
+				<a class="menu_item" href="homepage_og.html"><i class="material-icons">home</i>Home</a>
+				<a class="menu_item" href="portfolio_og.html">Portfolio</a></br>
+				<a class="menu_item" href="about_og.html">About Me</a>
+				<a class="menu_item" href="contact_og.html">Contact</a>								
+				<a class="menu_item" href="blog_og.html">Blog</a>				
+				<a class="menu_item" href="blogUpdates_og.html">-Updates</a>
+				<a class="menu_item" href="blogAbout_og.html">-About</a>
+				<a class="menu_item" href="blogArticles_og.html">-Articles</a>				
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="menu">
+		<ul>
+			<li class="menu_item"><i class="material-icons">home</i><a href="homepage_og.html">Home</a></li>
+			<li class="menu_item"><a href="portfolio_og.html">Portfolio</a></li>
+			<li class="menu_item"><a href="about_og.html">About Me</a></li>			
+			<div id="mobileMenuBlog" class="dropdown">
+				<li class="menu_item"><a href="blog_og.html">Blog</a></li>
+				<div id="dropdownMenuBlog" class ="dropdownContent">
+					<li class="blog_menu_item"><a href="blogUpdates_og.html">Updates</a></li>
+					<li class="blog_menu_item"><a href="blogAbout_og.html">About</a></li>
+					<li class="blog_menu_item"><a href="blogArticles_og.html">Articles</a></li>
+				</div>
+			</div>
+			<li class="menu_item"><a href="contact_og.html">Contact</a></li>
+		</ul>
+	</div>
+	
+	<header id="header" class="blogHeader"><h1>Welcome to my blog! A quick introduction.</h1></header></br>
+	
+	<div id="wrapper">		
+			<div id="placeholder" class="col-2"></div>
+			
+			<div id="main" class="col-10">
+				<img id="blogPic4" class="blogPic col-3" src="images/htmlLogo.png">
+
+				<p class="articleDate col-7">- Stephen Beaty - 4/7/17</p>
+				<p class="articleBody col-10">
+					Recently I've been doing a lot of studying and practicing with Web Development. That was the initial
+					inspiration as to why I decided to redesign my website. I wanted something that looked better, cleaner, 
+					more modern, and something that showed a bit more of my personality with the design. I also didn’t want to
+					have to rely on Bootstrap. While I feel that Bootstrap and similar frameworks and libraries are important, 
+					I felt that it was important that I coded this website by hand, from scratch. I want to keep adding features to this site.
+					I may tweak the design a bit, depending on how I think it looks within a few months’ time. I also want to add in full database/PHP
+					integration with the Blog. Currently, articles are all hardcoded directly. I feel that having the articles and details about the articles 
+					pulled from a database for virtually all the blog pages (except for the individual full article pages perhaps) would be a lot more efficient. 
+					I'd also like to potentially make my own personal "companion app" to make writing new blog posts for myself easier. For now, I'm happy with everything
+					I've accomplished, and excited to see how it will grow.
+				</p>
+			</div>
+	</div>
+	
+	<footer id="footer">Copyright sbeatycode 2017  - <a href="homepage.html">Back To Main Page</a></footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="mySiteFunc.js"></script>
+</body>
+</html>

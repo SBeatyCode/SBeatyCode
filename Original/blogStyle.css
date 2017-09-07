@@ -1,0 +1,96 @@
+/* css for the blog */
+
+.blogHeader {
+	background-color: rgba(255, 255, 255, .5);
+}
+
+.blogPic {
+	max-width: 30%;
+	height: auto;
+}
+
+#article2 {
+	border-left: 1px solid lightgrey;
+}
+
+#article3 {
+	border-top: 1px solid lightgrey;
+}
+
+#article4 {
+	border-top: 1px solid lightgrey;
+	border-left: 1px solid lightgrey;
+}
+
+.blog_menu_item:hover {
+	background-color: lightgray;
+}
+
+.dropdown {
+	position: relative;
+	display: inline-block;
+}	
+	
+.dropdownContent {
+	display: none;
+	position: absolute;
+	min-width: 50px;
+	background: black;
+	font-family: Verdana, sans-serif;
+	font-size: 14px;
+}
+
+.dropdown:hover .dropdownContent {
+	display: block;
+}
+
+.blog_menu_item {
+	display: inline-block;
+	list-style: none;
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+}
+	
+.blog_menu_item:hover {
+	background-color: grey;
+}
+	
+.blog_menu_item a {
+	text-decoration: none;
+	color: white;
+}
+
+@media only screen and (max-width: 990px) {
+
+	.blogPic {
+		min-width: 30%;
+		height: auto;
+	}
+	
+	.blog_menu_item {
+		display: inline-block;
+		list-style: none;
+		padding: 10px;
+		text-decoration: none;
+		color: white;
+	}
+	
+	.blog_menu_item:hover {
+		background-color: grey;
+	}
+	
+	.blog_menu_item a {
+		text-decoration: none;
+		color: white;
+	}
+	
+	.dropdownContent {
+		min-width: 86px;
+	}
+		
+	#article1, #article2, #article3, #article4 {
+		border: none;
+		border-bottom: 1px solid lightgrey;
+	}
+}

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="A resume, portfolio website where I can show off things that I've
+		learned. I hope to expand the site to continually show what I'm learning and doing. This is the about me page.">
+	<meta name="keywords" content="Stephen Beaty Sbeatycode Sbeaty Code resume portfolio computer tech programming about me">
+	<meta name="author" content="Stephen Beaty">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SBeaty Code - Portfolio</title>
+	<link rel="stylesheet" href="mySiteStyle.css"/>
+	<link rel="stylesheet" href="blogStyle.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+	<div id="mmBar">
+		<div id="mobileMenu" class="hide">
+			<a id="dropButton" class="menu_item" href="#"><i class="material-icons">menu</i>Menu</a>
+			<div id="dropdownMenu" class ="hide">
+				<a class="menu_item" href="homepage_og.html"><i class="material-icons">home</i>Home</a>
+				<a class="menu_item" href="portfolio_og.html">Portfolio</a></br>
+				<a class="menu_item" href="about_og.html">About Me</a>
+				<a class="menu_item" href="contact_og.html">Contact</a>								
+				<a class="menu_item" href="blog_og.html">Blog</a>				
+				<a class="menu_item" href="blogUpdates_og.html">-Updates</a>
+				<a class="menu_item" href="blogAbout_og.html">-About</a>
+				<a class="menu_item" href="blogArticles_og.html">-Articles</a>				
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="menu">
+		<ul>
+			<li class="menu_item"><i class="material-icons">home</i><a href="homepage_og.html">Home</a></li>
+			<li class="menu_item"><a href="portfolio_og.html">Portfolio</a></li>
+			<li class="menu_item"><a href="about_og.html">About Me</a></li>			
+			<div id="mobileMenuBlog" class="dropdown">
+				<li class="menu_item"><a href="blog_og.html">Blog</a></li>
+				<div id="dropdownMenuBlog" class ="dropdownContent">
+					<li class="blog_menu_item"><a href="blogUpdates_og.html">Updates</a></li>
+					<li class="blog_menu_item"><a href="blogAbout_og.html">About</a></li>
+					<li class="blog_menu_item"><a href="blogArticles_og.html">Articles</a></li>
+				</div>
+			</div>
+			<li class="menu_item"><a href="contact_og.html">Contact</a></li>
+		</ul>
+	</div>
+	
+	<div id="wrapper" class="row">
+		<h1 id="header" class="row col-12">Portfolio and Experience</h1>
+		
+		<div id="placeholder" class="col-2"></div>
+		
+		<div id="main" class="col-10">
+			<div id="projects" class="col-5">
+				<h4>Projects:</h4></br>
+				<p id="projectList">
+					<p class="listedItem">
+						<b>Sbeaty Code: </b><a href="homePage.html"><em>Homepage</em></a> 
+					</p></br>
+					<p>
+						This website, Sbeatycode, was completely hand-coded by scratch. I didn’t use any templates or frameworks (such as Bootstrap) to make it. This website is mobile responsive. I had an older version of 
+						this website up, but I decided to make a better version. This site uses HTML, CSS, and JavaScript with a little JQuery. You can find more details about my site at the blog, as well as information about any new updates.
+					</p></br>
+					<p class="listedItem">
+						<p>
+							<b>Vehicle Log: </b><a href="/vehicle_log/login.php"><em>Link</em></a>
+						</p></br>
+							This project was made for Greenville Technical College's CPT 283 PHP Programming 1 class. It was made using PHP, HTML, CSS, and utilizes Bootstrap. The whole project was made within
+							a virtual Linux environment within a campus server. The database uses phpMyAdmin. The goal was to make an inventory management Web App for managing different user's vehicles, and information
+							about those vehicle's. Specifically, it’s used to track details such as maintenance done, what type of tires a vehicle uses, how much mileage the vehicle has, and things of that nature. There 
+							are two types of user accounts. Standard user accounts are able to manage and maintain the information about their own, personal vehicles. Admin accounts are able to look at any information any 
+							user has inputted, add new vehicles, and edit details. In this way, in can be used either by a family, or by a small business. This project was made in about 12 weeks, while I was learning PHP.
+							This was my first time attempting a project of this scope.
+					</p></br>
+					<p class="listedItem">
+						<b>Book Inn:</b><br/>
+						This project was made for Greenville Technical College's CPT 275 Senior Project. It was made using ASP.NET, HTML, CSS, utilizes Bootstrap, and was made within Visual Studio. The database used Azure.
+						This was a team project, consisting of myself and four other students. The goal was to make a Web App that a bookstore for a small/medium sized college could use to keep track of book orders for classes,
+						reorder books, modify existing orders, and have different user roles. Student accounts are ‘read only’, and are able to see which classes use which books. Teacher accounts are able to order books, and change 
+						their existing orders. Bookstore Managers are able to do anything a Teacher can, except they can order books for any class. Admin accounts can order, change, and delete any order. Admin approval is needed whenever
+						an order is made, in order to prevent duplicate orders by Teachers and Managers. This project was made in the span of about 12 weeks. Unfortunately, due to situations out of my control, I can’t provide a link to a
+						working version of this project.
+					</p>
+				</p>
+			</div>
+			
+			<div id="experience" class="col-5">
+				<h4>Experience:</h4></br>
+					<p id="expList">
+						<p class="listedItem">
+							Graduated from Greenville Technical College in 2016 with an Associate's Degree in Computer Technology, with an emphasis on programming. 3.8 GPA.
+						</p><br>
+						<p class="listedItem">
+							Graduated from Arizona State University in 2012 with a Bachelor's Degree in Literature, Writing and Film. Minor in Film and Media production
+						</p><br>
+						<p class="listedItem">
+							I’ve built a PC, and I've helped friends and family with their computers and technical issues. 
+						</p><br>
+						<p class="listedItem">
+							Several years of experience interacting with customers in a retail environment. I’m good at working with customers, explaining things to them,
+							and helping them to find the products that they need. 
+						</p><br>
+					</p>
+			</div>
+		</div>
+	</div>
+	
+	<footer id="footer">Copyright sbeatycode 2017  - <a href="homepage.html">Back To Main Page</a></footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="mySiteFunc.js"></script>
+</body>
+</html>

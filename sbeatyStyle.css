@@ -1,0 +1,236 @@
+/***** GLOBAL *****/
+body {
+	background: linear-gradient(to bottom, lightgrey, teal);
+	background: -webkit-linear-gradient(to bottom, lightgrey, teal);
+	background-size: auto 100%;
+	background-repeat: none;
+	background-attachment: fixed;
+    color: black
+}
+
+body p {
+    font-family: Verdana, sans-serif;
+	font-size: 14px;
+    text-indent: 25px;
+}
+
+li {
+    list-style: none;
+}
+
+/***** NAVBAR *****/
+.navbar-inverse {
+    background-color: black;
+	color: white
+}
+
+.material-icons {
+	margin-right: -15px;
+}
+
+.blog_menu {
+    background-color: rgba(255, 255, 255, .7)
+}
+
+.menu_item_blog {
+    color: white;
+}
+
+/***** HOMEPAGE *****/
+#myPic {
+	max-width: 80%;
+	height: auto;
+}
+
+#homePage_Content {
+	padding-bottom: 30px;
+    padding-left: 10px;
+    padding-right: 10px;
+	background-color: rgba(255, 255, 255, .5);
+    border-radius: 25px;
+}
+
+#homePage_greeting {
+    text-align: center;
+    padding-top: 10px;
+}
+
+#homepage_title {
+    text-align: center;
+}
+
+/***** PORTFOLIO *****/
+.page_header {
+    text-align: center;
+}
+
+#portfolio_Container {
+    background-color: rgba(255, 255, 255, .5);
+    margin-left: 15em;
+    margin-right: 15em;
+    margin-top: 6em;
+    border-radius: 25px;
+}
+
+#project_header {
+    text-align: left;
+}
+
+#exp_header {
+    text-align: center;
+}
+
+.listed_item b {
+    font-family: Verdana, sans-serif;
+}
+
+.listed_item em {
+    font-family: Verdana, sans-serif;
+}
+
+#projects {
+    margin-right: 2em;
+}
+
+/***** ABOUT *****/
+#about_sidebar {
+    display: block;
+    background-color: rgba(255, 255, 255, .5);
+    margin-right: 2em;
+    text-align: center;
+    border-radius: 25px;
+}
+
+.section_header {
+    text-align: center;
+}
+
+.skill_section {
+    text-align: left;
+    text-indent: none;
+}
+
+#about_header {
+    text-align: center;
+    margin-top: auto;
+    margin-bottom: 2.5em;
+}
+
+#about_body {
+    background-color: rgba(255, 255, 255, .5);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-bottom: 2em;
+    margin-right: 1em;
+    border-radius: 25px;
+}
+
+/***** CONTACT *****/
+#contact_container {
+    background-color: rgba(255, 255, 255, .5);
+    margin-left: 15em;
+    margin-right: 15em;
+    margin-top: 6em;
+    border-radius: 25px;
+}
+
+.contactListItem i {
+    margin-right: 4px;
+}
+
+/***** BLOG *****/
+.blog-post {
+    background-color: rgba(255, 255, 255, .5);
+    padding-left: 1em;
+    padding-right: 1em;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    margin-bottom: 1em;
+    border-radius: 25px;
+}
+
+#blog_sidebar {
+    background-color: rgba(255, 255, 255, .5);
+    border-radius: 25px;
+}
+
+.home_button_container {
+    margin-bottom: 2em;
+}
+
+.blog_home_button {
+    border-radius: 25px;
+    box-shadow: 0px;
+}
+
+.btn-primary {
+    border-radius: 25px;
+    box-shadow: 0px;
+}
+
+/***** FOOTER *****/
+.footer{
+	background-color: black;
+	color: rgba(255, 255, 255, .5);
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	position: fixed;
+	left:0px;
+	bottom:0px;
+	height:30px;
+	width:100%;
+}
+
+#homePage_Content p{
+    text-indent: 25px;
+}
+
+/***** MOBILE *****/
+@media screen and (max-width: 768px) {
+    
+    
+    #portfolio_Container {
+        margin: 2em;
+        margin-bottom: 2.5em;
+    }
+    
+    #projects {
+        margin-bottom: 4em;       
+    }
+    
+    #experience {
+        border-top: 2px solid white;
+    }
+    
+    #about_header {
+        margin-bottom: 1em;
+    }
+    
+    .sidebar .section_header {
+        text-align: left;
+    }
+    
+    #about_sidebar {
+        width: 100%;
+        margin-top: 2em;
+        margin-bottom: 1em;
+    }
+    
+    #about_Container{
+        margin: 2em;
+        margin-top: .5em;
+        margin-bottom: 2.5em;
+    }
+    
+    #contact_container {
+        margin: 2em;
+    }
+        .home_button_container {
+            margin-bottom: 4em;
+    }
+    
+    #blog_sidebar {
+        margin: 1em;
+        margin-bottom: 2.5em;
+    }
+}

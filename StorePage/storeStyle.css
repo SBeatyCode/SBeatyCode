@@ -1,0 +1,289 @@
+/* css additionally to Bootstrap */
+body {
+    font-family: 'Merriweather', serif;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+img {
+    max-width: : 100%;
+}
+
+h2 {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 30px;
+    margin-bottom: 20px;
+}
+
+.btn-default {
+    background: #8393ca;
+    border: 3px solid #ecf0f1;
+    border-radius: 5px;
+    padding: 15px 30px;
+    color: white;
+}
+
+.btn-default:hover {
+    background-color: #97689c;
+}
+
+a:hover {
+    text-decoration: none;
+    color: #97689c;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+footer li a {
+    color: white;
+}
+
+footer li a:hover {
+    color: #494646;
+}
+
+/* Navbar */
+.navbar {
+    background: #97689c;
+    margin-bottom: 0px;
+    border: 0;
+}
+
+.navbar-default .navbar-brand, .navbar-default .navbar-nav>li>a {
+    color: white;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+}
+
+/* Featured Section*/
+
+.feature {
+    position: relative;
+}
+
+.feature img {
+    width: 100%;
+}
+
+.feature-text {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    /* removes the gap between fake element below and the text box below that*/
+    font-size: 0;
+}
+
+/*'fake element' to align the text box*/
+.feature-text:before {
+    content: '';
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle;
+}
+
+.feature-text p {
+    display: inline-block;
+    vertical-align: middle;
+    text-align: center;
+    width: 100%;
+    background: rgba(74, 82, 95, 0.2);
+    border-radius: 10px;
+    color: white;
+    font-size: 48px;
+    padding: 3%;
+    line-height: 80px;
+}
+
+/* Welcome Section */
+#welcome {
+    background: white;
+    padding-bottom: 30px;
+    text-align: center;   
+}
+
+#welcome a {
+    color: #494646;
+}
+
+.facilities {
+    font-size: 1.5em;
+}
+
+.facilities img {
+    display: block;
+    max-width: 60%;
+    margin: 30px auto;
+}
+
+/* Latest Offers Section*/
+#latest-offers {
+    text-align: center;
+    color: white;
+    background: #97689c;
+}
+
+.offer {
+    background: #4a525f;
+    position: relative;
+    min-height: 305px;
+    padding: 40px 10px;
+    margin-bottom: 60px;
+}
+
+.offer span {
+    background: #8abbb1;
+    display: block;
+    height: 100px;
+    width: 100px;
+    text-align: center;
+    border-radius: 100%;
+    line-height: 100px;
+    position: absolute;
+    margin-left: 50%;
+    left: -50px;
+    top: -50px;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.offer h3 {
+    margin-bottom: 50px;
+    font-size: 1.2em;
+}
+
+.offer p {
+    line-height: 2em;
+}
+
+.margin-bottom {
+    margin-bottom: 70px;
+}
+
+/* Shop Online Section*/
+#shop-online {
+    background: url('images/products.jpg') center no-repeat;
+    min-height: 852px;
+    color: 494646;
+}
+
+#shop-online .btn-default {
+    margin-top: 25px;
+}
+
+/* Footer Section */
+
+footer {
+    color: white;
+    background: #97689c;
+}
+
+footer li, address {
+    line-height: 2em;
+}
+
+i {
+    margin-right: 15px;
+}
+
+#copy {
+    text-align: center;
+    background: white;
+    color: #494646;
+    height: 60px;
+    line-height: 60px;
+    margin-top: 30px;
+}
+
+/* Blog Section */
+.blog-post-title {
+    background: url("images/divider-purple.png") center no-repeat;
+    height: 80px;
+    background-size: 300px 40px;
+    background-position: center 35px;
+    margin-bottom: 30px;
+}
+
+.blog-post {
+    border: 1px solid #494646;
+    border-radius: 10px;
+    margin: 30px 0;
+    padding: 20px;
+}
+
+/* Blog Sidebar */
+.sidebar-module {
+    border: 1px solid #494646;
+    border-radius: 10px;
+    margin: 30px 0;
+    padding: 20px;
+}
+
+/* About Us Section */
+#about {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+#about p {
+    margin: 30px 0;
+}
+
+/* Contact Us Section */
+#contact {
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.address {
+    text-align: left;
+    margin-top: 30px;
+    font-size: 1.2em;
+    line-height: 2em;
+}
+
+.address i {
+    color: #97689c;
+}
+
+#contact iframe {
+    margin-top: 30px;
+    max-width: 100%;
+}
+
+.message-area {
+    margin-top: 30px;
+}
+
+/* Mobile Styles */
+
+@media screen and (max-width: 768px) {
+    
+    li a {
+        text-align: center;
+    }   
+    
+    .feature-text p {
+        font-size: 28px;
+        line-height: 28px;
+    }
+    
+    h2 {
+        font-size: 1.6em;
+    }
+    
+    footer, .address {
+        text-align: center;
+    }
+    
+    footer ul, address {
+        border-bottom: 1px dotted;
+    }
+}

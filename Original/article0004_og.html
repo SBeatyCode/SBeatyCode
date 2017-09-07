@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="A resume, portfolio website where I can show off things that I've
+		learned. I hope to expand the site to continually show what I'm learning and doing.">
+	<meta name="keywords" content="Stephen Beaty Sbeatycode Sbeaty Code resume portfolio computer tech programming Web Development HTML CSS Javascript JQuery Java C# .NET Unity">
+	<meta name="author" content="Stephen Beaty">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>4/19/17 - 0004</title>
+	<link rel="stylesheet" href="mySiteStyle.css"/>
+	<link rel="stylesheet" href="blogStyle.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+	<div id="mmBar">
+		<div id="mobileMenu" class="hide">
+			<a id="dropButton" class="menu_item" href="#"><i class="material-icons">menu</i>Menu</a>
+			<div id="dropdownMenu" class ="hide">
+				<a class="menu_item" href="homepage_og.html"><i class="material-icons">home</i>Home</a>
+				<a class="menu_item" href="portfolio_og.html">Portfolio</a></br>
+				<a class="menu_item" href="about_og.html">About Me</a>
+				<a class="menu_item" href="contact_og.html">Contact</a>								
+				<a class="menu_item" href="blog_og.html">Blog</a>				
+				<a class="menu_item" href="blogUpdates_og.html">-Updates</a>
+				<a class="menu_item" href="blogAbout_og.html">-About</a>
+				<a class="menu_item" href="blogArticles_og.html">-Articles</a>				
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="menu">
+		<ul>
+			<li class="menu_item"><i class="material-icons">home</i><a href="homepage_og.html">Home</a></li>
+			<li class="menu_item"><a href="portfolio_og.html">Portfolio</a></li>
+			<li class="menu_item"><a href="about_og.html">About Me</a></li>			
+			<div id="mobileMenuBlog" class="dropdown">
+				<li class="menu_item"><a href="blog_og.html">Blog</a></li>
+				<div id="dropdownMenuBlog" class ="dropdownContent">
+					<li class="blog_menu_item"><a href="blogUpdates_og.html">Updates</a></li>
+					<li class="blog_menu_item"><a href="blogAbout_og.html">About</a></li>
+					<li class="blog_menu_item"><a href="blogArticles_og.html">Articles</a></li>
+				</div>
+			</div>
+			<li class="menu_item"><a href="contact_og.html">Contact</a></li>
+		</ul>
+	</div>
+	
+	<header id="header" class="blogHeader"><h1>The Grid-View.</h1></header></br>
+	
+	<div id="wrapper">		
+			<div id="placeholder" class="col-2"></div>
+			
+			<div id="main" class="col-10">
+				<img id="blogPic4" class="blogPic col-3" src="images/cssLogo.jpg">
+
+				<p class="articleDate col-7">- Stephen Beaty – 4/19/17</p>
+				<div class="articleBody col-10">
+					<p>
+						One of the big initial choices I had to make when I was building the site, in terms of style, was what method I wanted to use in order to give the page an appealing,
+						clean look. I knew going into it that I wanted to avoid manually placing everything for every single page, because that would take a lot of extra time. Placing floats,
+						determining the width for each individual element and trying to make each page look consistent within that isn’t impossible, but I wanted to avoid it.
+					</p>
+					<p>
+						Initially, I was thinking about using a Flexbox-Model. This would theoretically solve the responsiveness question, and would keep all the elements organized. When I 
+						tried it though by making a mock-up of my blog page, I didn’t like the way all the elements looked when the page was scaled down. Things were too crowded, and it was harder to place
+						items specifically within the page. So, I tried a style I had recently learned while working on a page for a friend – the Grid-View.  
+					</p>
+					<p>
+						With the Grid-View, each container or div is given a value, from 1-12, that determines the size it takes up - with the idea being that 12 would take up an entire row. So essentially, 
+						what you’re doing is laying out ‘rows’ of elements on the page. If you wanted to have 2 elements side by side in a row, you would use 6 and 6 (unless you wanted different sizes, then you 
+						could do 7 and 5, ect). What’s also cool about this, is that you can have one section off to the side, and keep placing elements/containers alongside it. For example, in a lot of my pages
+						I have a “placeholder” div with a value of 2 – which exists alongside all the other rows. Then next to that placeholder, I place elements and sections like normal. As long as I remember 
+						the placeholder of 2, I can place rows of elements with total values of 10 next to this placeholder section. This gives the page a built-in left-margin, and centers the page.  
+					</p>
+					<p>
+						The Grid-View also helps a lot with responsiveness, that’s discussed more in the CSS and Responsiveness blog post. 
+					</p>
+				</div>
+			</div>
+	</div>
+	
+	<footer id="footer">Copyright sbeatycode 2017  - <a href="homepage.html">Back To Main Page</a></footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="mySiteFunc.js"></script>
+</body>
+</html>

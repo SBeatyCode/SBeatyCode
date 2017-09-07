@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="A resume, portfolio website where I can show off things that I've
+		learned. I hope to expand the site to continually show what I'm learning and doing.">
+	<meta name="keywords" content="Stephen Beaty Sbeatycode Sbeaty Code resume portfolio computer tech programming Web Development HTML CSS Javascript JQuery Java C# .NET Unity">
+	<meta name="author" content="Stephen Beaty">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>SBeaty Code - Blog</title>
+	<link rel="stylesheet" href="mySiteStyleBlog.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+	<div id="mmBar">
+		<div id="mobileMenu" class="hide">
+			<a id="dropButton" class="menu_item" href="#"><i class="material-icons">menu</i>Menu</a>
+			<div id="dropdownMenu" class ="hide">
+				<a class="menu_item" href="homepage.html"><i class="material-icons">home</i>Home</a>
+				<a class="menu_item" href="about.html">About Me</a>
+				<a class="menu_item" href="contact.html">Contact</a>
+				<a class="menu_item" href="portfolio.html">Portfolio</a></br>
+				<a class="menu_item" href="blog.html">Blog</a>
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="menu">
+		<ul>
+			<li class="menu_item"><i class="material-icons">home</i><a href="homePage.html">Home</a></li>
+			<li class="menu_item"><a href="about.html">About Me</a></li>
+			<li class="menu_item"><a href="contact.html">Contact</a></li>
+			<li class="menu_item"><a href="portfolio.html">Portfolio</a></li>
+			<li class="menu_item"><a href="blog.html">Blog</a></li>
+		</ul>
+	</div>
+	
+	<header id="header"><h1>SBeatycode Development and Learning Blog</h1></header>
+	
+	<div id="wrapper">		
+		<div id="flexBox">
+			<div id="sidebar">
+				<h4><em>Updates:</em></h4></br>
+					<p>
+						I'm currently putting together my new website. This blog is initially hard-coded into the pages,
+						but soon I'll change it so that new posts are pulled from a database instead, and give myself the ability
+						to edit and create new posts. 
+					</p></br>
+				<h4><em>About:</em></h4></br>
+					<p>
+						My name is Stephen Beaty. I created, coded and maintain Sbeatycode. This blog serves as a 
+						compliment to my website. Here, I'll be blogging about things I'm working on, things I've made,
+						things I've learned WHILE working on things, and so forth. I hope that this blog will be useful to
+						others like myself.
+					</p></br>
+					<p>
+						This blog will most likely largely discuss Web Development, Java, C# .NET and Unity, and Java. However,
+						I'd also like to learn Linux, Python, C++ and possibly other things, so stay tuned! 
+					</p>
+			</div>
+				
+			<div id="main">
+				
+				<div id="article1">
+					<h3 class="article1Intro">Welcome to my blog! A quick introduction.</h3>
+					<p class="articleDate">- Stephen Beaty - 4/7/17</p>
+					<p class="articleBody">
+						Recently I've been doing a lot of studying and practicing with Web Development. That's largely why I decided to
+						completly redesign my website. I also want to keep adding features to it, as well as creating some sample
+						"mock up" sites and pages that show off what i can do, but would be incongruous with my main site.
+					</p>
+				</div>
+				
+				
+				<div id="article2">
+					<h3 class="article2Intro">Another Article</h3>
+					<p class="articleDate">- Stephen Beaty - 1/11/11</p>
+					<p class="articleBody">
+						Here is another article. Isn't it cool? Awww yeah, baby cakes. Don't forget to add a pagination to the bottom
+						of the screen, right above the footer. ALSO the site isn't fully responsive yet, don't forget to finish that!
+						The About and Updates sections should be like title bars on the top in mobile-mode and then like, you click/tap
+						to expand them out to read them. Like drop-down menus. Because having them UNDER the blog or OVER it would look
+						kinda tacky and gross?
+					</p>
+				</div>
+				
+				
+				<div id="article3">
+				</div>
+				<h3 class="article3Intro">A note to myself</h3>
+				<p class="articleDate">- A date -</p>
+				<p class="articleBody">
+					Ideally, I would like a way I could edit these, have the newest articles automatically post, get the date, ect.
+					I should be able to do that with Javascript/SQL. I'll need to look into that. ALSO for the sidebar, see if you can
+					make a script so that the length doesn't go past the length of the page and/or the length of the article section.
+					Or alternatively, once the article section grows larger, you can just make it 'stick' to the side of the screen.
+					Or, you can keep the article section the same size it is now, but then like just have a 'full article' page
+					for each blog post you write. That's kinda 'bleh' though. Maybe just have it so that once an article is
+					X-length, then you 'hide' part of it and have a button or anchor to 'Show Full' and 'Minimize' the article.
+					So idk. See what makes sense. This is like it's
+					whole own separate project WITHIN your website, it's cool.
+				</p>
+			</div>
+				
+				<!-- <div id="archive">
+					<p>Previous Posts</p>
+					<ul>
+						<!--<li></li>
+					</ul>
+				</div> -->
+		</div>
+	</div>
+	
+	<footer id="footer">Copyright sbeatycode 2017</footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="mySiteFunc.js"></script>
+</body>
+</html>

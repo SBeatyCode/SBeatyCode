@@ -1,0 +1,222 @@
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background: linear-gradient(to bottom, lightgrey, teal);
+	background: -webkit-linear-gradient(to bottom, lightgrey, teal);
+	background-size: auto 100%;
+	background-repeat: none;
+	background-attachment: fixed;
+}
+
+a {
+	color: #0000EE;
+}
+
+a:visited {
+	color: #0000EE;
+}
+
+/* These sections define the Responsive Grid View*/
+[class*="col-"] {
+    float: left;
+    padding: 15px;
+}
+
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+/* for after a row*/
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+/*display for cell phones*/
+@media only screen and (max-width: 990px) {
+	
+	[class*="col-"] {
+		width: 100%;
+		justify-content: center;
+	}
+	
+	#mobileMenu {
+		background: black;
+		color: white;
+		font-family: Verdana, sans-serif;
+		font-size: 14px;
+		position: relative;
+		display: inline-block;
+	}
+	
+	#mmBar {
+		background: black;
+	}
+	
+	#mmBar a {
+		color: white;
+	}
+	
+	#mmBar a:visited {
+		color: white;
+	}
+	
+	#myPic {
+		max-width: 50%;
+	}
+	
+	#main {
+		text-align: center;
+		margin-left: 30px;
+		padding: 20px;
+	}
+	
+	#projects {
+		border-bottom: solid lightgrey 1px;
+	}
+	
+	#footer{
+		position: static;
+	}
+}
+
+.hide {
+	display: none; /* keep an eye out to make sure this property doesn't cause a problem*/
+	overflow: hidden; 
+	height: 0px; 
+	width: 0px; 
+	margin: -1px; 
+	padding: 0; 
+	border: 0; 
+}
+
+#menu {
+	background-color: black;
+	color: white;
+	position: relative;
+	padding: 10px;
+	font-family: Verdana, sans-serif;
+	font-size: 14px;
+}
+
+.menu_item {
+	display: inline-block;
+	list-style: none;
+	padding: 10px;
+	text-decoration: none;
+	color: white;
+}
+
+.menu_item a {
+	text-decoration: none;
+	color: white;
+}
+
+.menu_item:hover {
+	background-color: grey;
+}
+
+#dropdownMenu {
+	position: absolute;
+	min-width: 85px;
+	background: black;
+}
+
+#dropdownMenu li { /* may be able to get rid of this if other thing works*/
+	display: list-item;
+}
+
+.material-icons {
+	vertical-align: -20%;
+	margin-right: 4px;
+}
+
+#wrapper {
+	width: 80%;
+	font-family: Verdana, sans-serif;
+	font-size: 14px;
+	text-indent: 25px;
+}
+
+#myPic {
+	max-width: 100%;
+	min-width: 60%;
+	height: auto;
+}
+
+#header {
+	text-align: center;
+}
+
+#greeting {
+	text-align: center;
+}
+
+#main {
+	font: Tahoma;
+	font-size: 14;
+	padding-bottom: 30px;
+	background-color: rgba(255, 255, 255, .5);
+}
+
+#main h4 {
+	text-align: center;
+}
+
+#main ul li {
+	list-style: none;
+}
+
+/* setting the right border for desktop and larger tablets only */
+@media only screen and (min-width: 991px) {
+	#projects {
+		margin-left: 30px;
+		border-right: solid lightgrey 1px;
+	}
+}
+
+#skillContainer {
+	/* PICK ANOTHER COLOR TO BE IN THE BACKGROUND HERE, LIKE A GREY
+	
+	maybe*
+	*/	
+}
+
+.skillSection {
+		/*background: linear-gradient(to right, rgb(153, 255, 255), rgb(255, 255, 255));*/
+		/*background-color: rgba(102, 255, 255, .3);*/
+		background-color: rgba(108, 147, 147, .4);
+		/* KEEP LOOKING
+		
+		AND STYLE THE BOX A BIT DIFFERENT*/
+	}
+
+#footer{
+	background-color: black;
+	color: rgba(255, 255, 255, .5);
+	font-family: Verdana, sans-serif;
+	font-size: 12px;
+	position:fixed;
+	left:0px;
+	bottom:0px;
+	height:30px;
+	width:100%;
+}

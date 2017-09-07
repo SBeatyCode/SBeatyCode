@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<meta name="description" content="A resume, portfolio website where I can show off things that I've
+		learned. I hope to expand the site to continually show what I'm learning and doing.">
+	<meta name="keywords" content="Stephen Beaty Sbeatycode Sbeaty Code resume portfolio computer tech programming Web Development HTML CSS Javascript JQuery Java C# .NET Unity">
+	<meta name="author" content="Stephen Beaty">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>4/19/17 - 0005</title>
+	<link rel="stylesheet" href="mySiteStyle.css"/>
+	<link rel="stylesheet" href="blogStyle.css"/>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+</head>
+<body>
+	<div id="mmBar">
+		<div id="mobileMenu" class="hide">
+			<a id="dropButton" class="menu_item" href="#"><i class="material-icons">menu</i>Menu</a>
+			<div id="dropdownMenu" class ="hide">
+				<a class="menu_item" href="homepage_og.html"><i class="material-icons">home</i>Home</a>
+				<a class="menu_item" href="portfolio_og.html">Portfolio</a></br>
+				<a class="menu_item" href="about_og.html">About Me</a>
+				<a class="menu_item" href="contact_og.html">Contact</a>								
+				<a class="menu_item" href="blog_og.html">Blog</a>				
+				<a class="menu_item" href="blogUpdates_og.html">-Updates</a>
+				<a class="menu_item" href="blogAbout_og.html">-About</a>
+				<a class="menu_item" href="blogArticles_og.html">-Articles</a>				
+			</div>
+		</div>
+	</div>
+	
+
+	<div id="menu">
+		<ul>
+			<li class="menu_item"><i class="material-icons">home</i><a href="homepage_og.html">Home</a></li>
+			<li class="menu_item"><a href="portfolio_og.html">Portfolio</a></li>
+			<li class="menu_item"><a href="about_og.html">About Me</a></li>			
+			<div id="mobileMenuBlog" class="dropdown">
+				<li class="menu_item"><a href="blog_og.html">Blog</a></li>
+				<div id="dropdownMenuBlog" class ="dropdownContent">
+					<li class="blog_menu_item"><a href="blogUpdates_og.html">Updates</a></li>
+					<li class="blog_menu_item"><a href="blogAbout_og.html">About</a></li>
+					<li class="blog_menu_item"><a href="blogArticles_og.html">Articles</a></li>
+				</div>
+			</div>
+			<li class="menu_item"><a href="contact_og.html">Contact</a></li>
+		</ul>
+	</div>
+	
+	<header id="header" class="blogHeader"><h1>Menubar Changes - click to close.</h1></header></br>
+	
+	<div id="wrapper">		
+			<div id="placeholder" class="col-2"></div>
+			
+			<div id="main" class="col-10">
+				<img id="blogPic4" class="blogPic col-3" src="images/jsLogo.png">
+
+				<p class="articleDate col-7">- Stephen Beaty – 4/29/17</p>
+				<div class="articleBody col-10">
+					<p>
+						I made some changes to the menubar, and some other minor changes to the site in general. I figured I would take some time and explain what I did.
+					</p>
+					<p>
+						One small issue I noticed was that in fullscreen (or at a window size close to fullscreen), on the Blog front-page, one of the four blog posts had a bug where it would ‘sink’
+						down below the other elements. At first I thought I had set the containers to be too wide, but after shrinking them a size it had the same problem. I didn’t want to shrink the container
+						to be too small either, because that would destroy the look of the page. Thankfully the solution was simple. Since the posts are arranged in a 2x2 fashion, I merely had to add an extra container
+						around each row. This was, the containers would be ‘stuck’ together, and one of the elements inside of the row containers couldn’t ‘sink’ away from the others.
+					</p>
+					<p>
+						Aside from fixing that blog issue, and fixing some small typos and word usage, most of the changes revolved around the top menubar. First I rearranged the items on the menu so that it makes more
+						logical sense how it’s organized. I eliminated the blog menu bar entirely. Now, when the user hovers over the blog button in the menubar, the blog menu pops up underneath. I also got rid of the blog
+						dropdown menu button for mobile, now it’s just one dropdown menu that includes the blog pages.
+					</p>
+					<p>
+						The thing that took me the longest to implement was being able to close the menu bar when the user clicked outside of the menu area. I keep trying different solutions, I kept experimenting, but I kept
+						running into problems. Either the menu would never want to open because my menu-close function was making ALL clicks close the menu (even the ones meant to open it), or it would keep other parts of my script
+						from functioning correctly, and so on. I spent time searching through documentation, looking up things online, but nothing seemed to work right. I had the idea to simply change it to a hover: element, but that
+						brought along with it the ‘sticky’ hover element issues that mobile brings with it, so I decided against it.
+					</p>
+					<p>
+						It took me awhile to figure out how to make it so the user could click outside the menu to close it, while still keeping the ability to close it with the actual menu button. Eventually I came across an article
+						over at <a href="https://css-tricks.com/dangers-stopping-event-propagation/">css tricks by Philip Walton</a> that addressed the issues I kept running into. This article is worth a read if you have the time. This 
+						is the code that was recommended:
+					</p></br>
+					<p>
+						<p><code>$(document).on('click', function(event) {</code></p>
+						<p><code>   if(!$(event.target).closest('#menuContainer').length) {</code></p>
+						<p><code>//code to hide the menu</code></p>
+						<p><code>   }</code></p>
+						<p><code>});</code></p>
+					</p></br>
+
+					</p></br>
+					<p>
+						After using the code that Walton suggested for closing a menu bar, the problem was fixed. While there’s definitely a lot of value in searching through documentation, experimenting, and trying all that you can on your own,
+						there’s also nothing wrong with reaching out and trying to find help or advice. Chances are, if you’re having some kind of issue with coding, someone else out there in the world has also had that problem. The Internet
+						is a great tool, provided that you don’t forget to experiment on your own as well – that’s important.
+					</p>
+				</div>
+			</div>
+	</div>
+	
+	<footer id="footer">Copyright sbeatycode 2017  - <a href="homepage.html">Back To Main Page</a></footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="mySiteFunc.js"></script>
+</body>
+</html>

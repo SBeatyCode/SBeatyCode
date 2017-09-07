@@ -1,0 +1,326 @@
+/*
+
+**********************************************************
+    * AUTHOR: STEPHEN BEATY
+
+    *WEBSITE: SBEATY CODE
+
+
+        *****NOTE*****
+        
+          Splatoon, Nintendo, Inklings, and all related terms and images belong to Nintendo. This is simply a fansite I made to practice coding webpages using Javascript and CSS animations
+
+**********************************************************
+          
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: rgb(34, 34, 34);
+    color: white;
+}
+
+/*****  Navbar  ******/
+.navbar {
+    background-color: black;
+    color: white;
+    margin: auto;
+    position: fixed;
+    z-index: 13;
+}
+
+.navbar .navbar-nav {
+  display: inline-block;
+  float: none;
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.logo {
+    background: url('Images/Splatlogo1.jpg') no-repeat center;
+    background-size: contain;
+    background-color: black;
+    height: 120px;
+}
+
+.splat-btn {
+    color: white;
+    font-size: 2em;
+    padding: 8px;
+    font-family: 'Baloo Bhaijaan', cursive;
+    position: relative;
+}
+
+.btn1 {
+    background: blue;
+}
+
+.btn1:hover {
+    background: linear-gradient(darkblue, blue);
+    font-size: 40;
+    top: -5px
+}
+
+.btn1:active {
+    font-size: 40;
+    top: -8px
+}
+
+.btn1:focus {
+    background: linear-gradient(darkblue, blue);
+    color: white;
+}
+
+.btn2 {
+    background: green;
+}
+
+.btn2:hover {
+    background: linear-gradient(#003306 ,green);
+    font-size: 40;
+    top: -5px
+}
+
+.btn2:active {
+    font-size: 40;
+    top: -8px
+}
+
+.btn2:focus {
+    background: linear-gradient(#003306 ,green);
+    color: white;
+}
+
+.btn3 {
+    background: #ff0582;
+}
+
+.btn3:hover {
+    background: linear-gradient(#ad0056 ,#ff0582);
+    font-size: 40;
+    top: -5px;
+}
+
+.btn3:active {
+    top: -8px;
+    font-size: 40;
+}
+
+.btn3:focus {
+    background: linear-gradient(#ad0056 ,#ff0582);
+    color: white;
+    font-size: 40;
+}
+
+.btn4 {
+    background: darkorange;
+} 
+
+.btn4:hover {
+    background: linear-gradient(orangered ,darkorange);
+    font-size: 40;
+    top: -5px
+}
+
+.btn4:active {
+    font-size: 40;
+    top: -8px
+}
+
+.btn4:focus {
+    background: linear-gradient(orangered , darkorange);
+    color: white;
+}
+
+.dropdown-menu {
+    margin-top: 10px;
+}
+
+.dropdown .dropdown-menu {
+    font-family: 'Baloo Bhaijaan', cursive;
+    background: darkorange;
+    color: white;
+}
+
+.dropdown .dropdown-menu li {
+    background: darkorange;
+}
+
+.dropdown .dropdown-menu li a {
+    color: white;
+    font-size: 20;
+}
+
+.menu-container {
+    position: relative;
+    padding: 20px 100px 10px 250px;
+    margin-top: -25px;
+    left: -100px;
+}
+
+ul .menu-container li {
+    width: 100%;
+    
+}
+
+/*****  Parallax  ******/
+.placeholder {
+    padding-top: 50px;
+}
+
+.parallax {
+    background: url('../Images/promo324080340.jpg') no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 700px;
+}
+
+.parallaxBottom {
+    background: url('../Images/thumb-1920-821896.jpg') no-repeat center;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 700px;
+}
+
+/*****  Main Section  ******/
+#welcome {
+    text-align: center;
+    font-size: 40;
+    margin-top: 2em;
+    z-index: -1;
+    font-family: 'Baloo Bhaijaan', cursive;
+}
+
+.splatfest {
+    color: #ff0582;
+}
+
+#box-container {
+    background: black;
+}
+
+.text-container {
+    background: black;
+}
+
+.left-box {
+    background: green;
+    transform: rotate(2deg);
+    padding-top: 1em;
+    font-family: 'Baloo Bhaijaan', cursive;
+    font-size: 16px;
+}
+
+.left-box h3 {
+    text-align: center;
+}
+
+.right-box {
+    background: #ff0582;
+    transform: rotate(-2deg);
+    padding-top: 1em;
+    font-family: 'Baloo Bhaijaan', cursive;
+    font-size: 16px;
+}
+
+.right-box h3 {
+    text-align: center;
+}
+
+#boxart-container {
+    background: linear-gradient(blue, #ff0582);
+}
+
+.middle-box {
+    background: rgba(0, 0, 0, 0);
+    color: white;
+    padding-top: 2em;
+    font-family: 'Baloo Bhaijaan', cursive;
+    font-size: 18px;
+}
+
+.middle-box h3 {
+    text-align: center;
+}
+
+.boxart {
+    padding-top: 1em;
+    font-family: 'Baloo Bhaijaan', cursive;
+}
+
+.boxart img {
+    max-height: 20em;
+    width: auto;
+}
+
+#inklingBoy {
+    visibility: hidden;
+}
+
+#inklingBoy img{
+    width: 100%;
+    height: auto;
+}
+
+#inklingGirl {
+    visibility: hidden;
+}
+
+#inklingGirl img{
+    width: 100%;
+    height: auto;
+}
+
+
+/*****  Footer  ******/
+footer {
+    font-family: 'Baloo Bhaijaan', cursive;
+    text-align: center;
+}
+
+#nintendo a {
+    color: red;
+}
+
+
+/*****  Mobile  ******/
+@media screen and (max-width: 1000px) {
+    
+   .placeholder {
+        padding-top: -10px;
+    }
+    
+    .logo {
+        visibility: hidden;
+        width: 0px;
+        height: 0px;
+    }
+    
+    .dropdown-menu {
+        margin-top: 0px;
+        background-color: black;
+    }
+    
+    .menu-container {
+        background-color: black;
+        padding: 0px;
+        margin-top: 0pxpx;
+        left: 0px;
+    }
+    
+    .parallax {
+        background-position: bottom;
+        height: 500px;
+    }
+
+    .parallaxBottom {
+        height: 500px;
+    }
+}
