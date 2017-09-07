@@ -188,6 +188,9 @@ li {
 /***** MOBILE *****/
 @media screen and (max-width: 768px) {
     
+    #homePage_Content {
+        margin-bottom: 4em;
+    }
     
     #portfolio_Container {
         margin: 2em;
@@ -225,7 +228,8 @@ li {
     #contact_container {
         margin: 2em;
     }
-        .home_button_container {
+    
+    .home_button_container {
             margin-bottom: 4em;
     }
     
