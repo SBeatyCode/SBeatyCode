@@ -1,0 +1,76 @@
+body   {
+		text-align: center;
+		background: #D3D3D3;
+	}
+
+caption {
+	color: #0645AD;
+}
+
+input {
+	margin-left: 10%;
+	text-align: center;
+	border-color: navy;
+}
+
+#inputs {
+	width: 550px;
+	padding: .75em 0 .75em 0;
+	margin: auto;
+	text-align: center;
+	border: solid 4px navy #0645AD;
+}
+
+h2 {
+	color: #0645AD;
+}
+
+h3 {
+	color: #0645AD;
+}
+
+h4 {
+	color: #0645AD;
+}
+
+table   {
+	border: solid 2px navy;
+	font-style: italic;
+	margin: 5% 5% 5% 9.5%;
+	text-align: center;
+	width: 80%;
+}
+	
+table caption   {
+	font-size: 12pt;
+	text-decoration: underline;
+	font-weight: 600;
+}
+	
+tr a   {
+	text-decoration: none;	
+}
+	
+tr a:hover   {
+	text-decoration: underline;
+}
+	
+td   {
+	background: white;
+	border: solid 2px navy;
+	padding-right: 10px;
+	padding-left: 1px;
+}
+
+th {
+	padding-right: 10px;
+}
+
+tr   {
+	background: white;
+	border: solid 2px navy;
+}
+	
+ul li   {
+	padding-bottom: 1%;	
+}
