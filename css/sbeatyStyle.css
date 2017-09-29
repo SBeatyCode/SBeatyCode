@@ -69,6 +69,7 @@ li {
     margin-left: 15em;
     margin-right: 15em;
     margin-top: 6em;
+    margin-bottom: 4em;
     border-radius: 25px;
 }
 
@@ -86,6 +87,10 @@ li {
 
 .listed_item em {
     font-family: Verdana, sans-serif;
+}
+
+.project-link {
+    font-size: 16px;
 }
 
 #projects {
@@ -179,6 +184,10 @@ li {
 	bottom:0px;
 	height:30px;
 	width:100%;
+}
+
+.contact-footer {
+    text-align: center;
 }
 
 #homePage_Content p{
