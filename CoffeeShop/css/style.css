@@ -1,0 +1,391 @@
+/*********** UNIVERSAL STYLES ***********/
+
+
+* {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Helvetica', sans-serif;
+    font-weight: 400;
+}
+
+
+/*********** CONTAINER ***********/
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+/*********** NAVBAR - TOP NAV ***********/
+
+
+#top-nav {
+    align-self: flex-start;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #00592D;
+    color: #fff;
+    padding: .7rem;
+    font-size: 1.5rem;
+    text-align: left;
+}
+
+#top-nav a {
+    color: #fff;
+    text-decoration: none;
+    text-align: center;
+}
+
+#top-nav-logo {
+    padding-right: 1.5rem;
+}
+
+#top-nav-logo a:hover {
+    color: #282e34; 
+}
+
+#top-nav__menu-open-button {
+    cursor: pointer;
+}
+
+#top-nav__menu-open-button:hover {
+    color: #282e34;
+}
+
+/*********** NAVBAR - SIDE NAV ***********/
+
+
+#side-nav {
+    position: fixed;
+    top: 1.86em;
+    left: 0;
+    height: 100vh;
+    overflow-x: hidden;
+    background-color: #000;
+    opacity: .85;
+    text-align: left;
+    font-size: 1.7rem;
+    line-height: 3rem;
+    width: 0;
+    transition: .9s;
+}
+
+#side-nav-list {
+    padding-top: 1.5em;
+}
+
+#side-nav__close-button {
+    position: fixed;
+    top: 1em;
+    left: .3em;
+    color: #fff;
+    font-size: 3rem;
+    cursor: pointer;
+    overflow: hidden;
+    display: none;
+}
+
+#side-nav__close-button:hover {
+    color: #00592D;
+}
+
+.side-nav-list__item__link {
+    font-weight: 100;
+    color: #fff;
+    text-decoration: none;
+    padding-left: 3em;
+}
+
+.side-nav-list__item__link:hover {
+    color: #00592D;
+}
+
+
+/*********** MAIN ***********/
+
+
+#main {
+    margin-top: 1.9em;
+}
+
+
+/*********** PAARALLAX STYLES ***********/
+
+
+.parallax {
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+.parallax-image {
+    height: 50rem;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+#coffee-image1 {
+    background-image: url('../img/cafe-outside-sm.jpg');
+}
+
+#coffee-image2 {
+    background-image: url('../img/coffee-shop-sm.jpg');
+}
+
+#coffee-image3 {
+    background-image: url('../img/coffee-shop-board-sm.jpg');
+}
+
+.parallax-image__text {
+    font-size: 3.5rem;
+    color: #fff;
+    text-shadow: 1px 1px #000;
+    padding-top: 15rem;
+}
+
+
+/*********** TEXT SECTION - POST PARALLAX IMAGE, AND CONTENT ***********/
+
+
+.text-section {
+    color: #fff;
+    background-color: #282e34;
+    height: 50vh;
+    width: 90%;
+    line-height: 1.5rem;
+    font-size: 1.3rem;
+    padding: 2em 1em;
+    padding-right: 4em;
+    overflow: hidden;
+}
+
+.content {
+    min-height: 50vh;
+    width: 100%;
+    overflow: hidden;
+}
+
+#contact {
+    padding-top: 1em;
+    background-color: #efefef;
+    color: #000;
+}
+
+#contact-header {
+    font-size: 2.5rem;
+}
+
+#contact__social-media {
+    padding-top: 1rem;
+    font-size: 2rem;
+    list-style: none;
+    display: inline-block;
+}
+
+.contact__social-media__link a{
+    color: #000;
+    text-decoration: none;
+}
+
+.contact__social-media__link a .fa-link-icon {
+    color: #00592D;
+}
+
+.contact__social-media__link a:hover{
+    color: #00592D;
+}
+
+
+/*********** IMAGE GALLERY ***********/
+
+
+#content--image-gallery {
+    display: flex;
+    flex-direction: column;
+}
+
+.content--image-gallery--slide {
+    height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: scroll;
+    overflow: hidden;
+}
+
+#image-slide1 {
+    background-image: url('../img/coffee-1-sm.jpg');
+}
+
+#image-slide2 {
+    background-image: url('../img/coffee-2-sm.jpg');
+}
+
+#image-slide3 {
+    background-image: url('../img/coffee-3-sm.jpg');
+}
+
+#image-slide4 {
+    background-image: url('../img/coffee-cup-sm.jpg');
+}
+
+
+/*********** FOOTER ***********/
+
+
+#footer {
+    background-color: #00592D;
+    color: #fff;
+    width: 100%;
+    padding: 2em;
+}
+
+#footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+#footer a:hover {
+    color: #282e34;
+}
+
+
+/*********** Media Queries ***********/
+
+
+extra small mobile sceens
+@media (min-width: 500px) {
+    .text-section {
+        height: 35vh;
+        width: 98%;
+        line-height: 1.5rem;
+        font-size: 1.3rem;
+    }
+}
+
+
+/*medium sized screens/tablets*/
+@media (min-width: 1000px) {
+    #coffee-image1 {
+        background-image: url('../img/cafe-outside-md.jpg');
+    }
+
+    #coffee-image2 {
+        background-image: url('../img/coffee-shop-md.jpg');
+    }
+
+    #coffee-image3 {
+        background-image: url('../img/coffee-shop-board-md.jpg');
+    }
+    
+    #image-slide1 {
+        background-image: url('../img/coffee-1-md.jpg');
+    }
+
+    #image-slide2 {
+        background-image: url('../img/coffee-2-md.jpg');
+    }
+
+    #image-slide3 {
+        background-image: url('../img/coffee-3-md.jpg');
+    }
+
+    #image-slide4 {
+        background-image: url('../img/coffee-cup-md.jpg');
+    }
+    
+    #top-nav {
+        font-size: 2rem;
+    }
+    
+    #side-nav {
+        top: 2.25em;
+    }
+    
+    #side-nav__close-button {
+        top: 1.5em;
+        left: .3em;
+    }
+    
+    .text-section {
+        height: 30vh;
+        width: 98%;
+        padding: 2em 1em;
+        line-height: 2rem;
+        font-size: 1.5rem;
+    }
+    
+    #contact {
+        padding-top: 1rem;
+    }
+    
+    #contact__social-media {
+        padding-top: 1.2rem;
+        padding-bottom: 1.5rem;
+        font-size: 3rem;
+    }
+    
+    #contact-header {
+        font-size: 3rem;
+    }
+    
+    .parallax-image__text {
+        font-size: 4rem;
+    }
+}
+
+
+/*large/desktop screens*/
+@media (min-width: 1500px) {
+    #coffee-image1 {
+        background-image: url('../img/cafe-outside-lg.jpeg');
+    }
+
+    #coffee-image2 {
+        background-image: url('../img/coffee-shop-lg.jpeg');
+    }
+
+    #coffee-image3 {
+        background-image: url('../img/coffee-shop-board-lg.jpeg');
+    }
+    
+    #image-slide1 {
+        background-image: url('../img/coffee-1-lg.jpeg');
+    }
+
+    #image-slide2 {
+        background-image: url('../img/coffee-2-lg.jpeg');
+    }
+
+    #image-slide3 {
+        background-image: url('../img/coffee-3-lg.jpeg');
+    }
+
+    #image-slide4 {
+        background-image: url('../img/coffee-cup-lg.jpeg');
+    }
+    
+    .text-section {
+        height: 15vh;
+        width: 98%;
+        line-height: 2.2rem;
+        font-size: 1.75rem;
+    }
+    
+    .parallax-image__text {
+        font-size: 5rem;
+    }
+}
